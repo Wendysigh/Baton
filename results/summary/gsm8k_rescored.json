@@ -1,0 +1,514 @@
+{
+ "scope": "CPU-only rescoring of the saved full-test GSM8K outputs (raw/extra/gsm8k) with lm-eval's exact gsm8k_cot filters and\nexact_match settings (lm_eval 0.4.13, tasks/gsm8k/gsm8k-cot.yaml, metadata version 3.0). Saved text was generated with the\nchat template, 512 tokens and a stop at newline + 'Q:'; lm-eval's own stop list ('Q:', '</s>', '<|im_end|>') is applied to it\nbefore filtering, so this is a rescoring of those outputs, not an lm-eval run. The original score is kept as stored.",
+ "lm_eval": "0.4.13",
+ "directions": {
+  "4Bto9B": {
+   "native": {
+    "n": 1319,
+    "legacy": 93.5557240333586,
+    "strict": 93.25246398786959,
+    "flex": 93.32827899924186,
+    "strict_ci": [
+     91.81197877179682,
+     94.61713419257013
+    ],
+    "flex_ci": [
+     91.96171341925701,
+     94.69294920394238
+    ],
+    "missing_strict": 23,
+    "disagree": 5,
+    "first_answer": 0,
+    "several_answers": 13,
+    "contradict": 1,
+    "repeat": 0,
+    "cap": 26,
+    "early_wrong_late_right": 3,
+    "early_right_late_wrong": 2,
+    "ntok_median": 138.0,
+    "ntok_mean": 162.17361637604245
+   },
+   "web": {
+    "n": 1319,
+    "legacy": 88.24867323730099,
+    "strict": 82.10765731614859,
+    "flex": 84.23047763457164,
+    "strict_ci": [
+     80.13457164518574,
+     84.1546626231994
+    ],
+    "flex_ci": [
+     82.2592873388931,
+     86.12585291887794
+    ],
+    "missing_strict": 110,
+    "disagree": 34,
+    "first_answer": 2,
+    "several_answers": 131,
+    "contradict": 1,
+    "repeat": 5,
+    "cap": 64,
+    "early_wrong_late_right": 31,
+    "early_right_late_wrong": 3,
+    "ntok_median": 226.0,
+    "ntok_mean": 243.95830174374527
+   },
+   "tail_web": {
+    "n": 1319,
+    "legacy": 87.71796815769522,
+    "strict": 86.73237300985596,
+    "flex": 87.03563305534496,
+    "strict_ci": [
+     84.83699772554965,
+     88.55193328279
+    ],
+    "flex_ci": [
+     85.21607278241092,
+     88.78127369219104
+    ],
+    "missing_strict": 49,
+    "disagree": 12,
+    "first_answer": 0,
+    "several_answers": 0,
+    "contradict": 0,
+    "repeat": 2,
+    "cap": 40,
+    "early_wrong_late_right": 8,
+    "early_right_late_wrong": 4,
+    "ntok_median": 169.0,
+    "ntok_mean": 197.98938589840787
+   },
+   "chat": {
+    "n": 1319,
+    "legacy": 86.73237300985596,
+    "strict": 84.98862774829416,
+    "flex": 86.27748294162244,
+    "strict_ci": [
+     82.94162244124337,
+     86.8081880212282
+    ],
+    "flex_ci": [
+     84.38210765731615,
+     88.02122820318424
+    ],
+    "missing_strict": 88,
+    "disagree": 19,
+    "first_answer": 0,
+    "several_answers": 6,
+    "contradict": 1,
+    "repeat": 1,
+    "cap": 69,
+    "early_wrong_late_right": 18,
+    "early_right_late_wrong": 1,
+    "ntok_median": 204.0,
+    "ntok_mean": 226.49734647460198
+   },
+   "copy_chat": {
+    "n": 1319,
+    "legacy": 88.24867323730099,
+    "strict": 87.03563305534496,
+    "flex": 87.94541319181198,
+    "strict_ci": [
+     85.21607278241092,
+     88.855193328279
+    ],
+    "flex_ci": [
+     86.2016679302502,
+     89.68915845337376
+    ],
+    "missing_strict": 67,
+    "disagree": 14,
+    "first_answer": 0,
+    "several_answers": 46,
+    "contradict": 0,
+    "repeat": 1,
+    "cap": 69,
+    "early_wrong_late_right": 13,
+    "early_right_late_wrong": 1,
+    "ntok_median": 181.0,
+    "ntok_mean": 208.9052312357847
+   }
+  },
+  "9Bto4B": {
+   "native": {
+    "n": 1319,
+    "legacy": 89.91660348749052,
+    "strict": 87.41470811220621,
+    "flex": 89.38589840788475,
+    "strict_ci": [
+     85.59514783927217,
+     89.1603487490523
+    ],
+    "flex_ci": [
+     87.64215314632298,
+     90.97801364670205
+    ],
+    "missing_strict": 58,
+    "disagree": 32,
+    "first_answer": 0,
+    "several_answers": 113,
+    "contradict": 2,
+    "repeat": 0,
+    "cap": 33,
+    "early_wrong_late_right": 29,
+    "early_right_late_wrong": 3,
+    "ntok_median": 156.0,
+    "ntok_mean": 183.89082638362396
+   },
+   "web": {
+    "n": 1319,
+    "legacy": 89.08263836239576,
+    "strict": 88.17285822592874,
+    "flex": 65.95905989385898,
+    "strict_ci": [
+     86.3532979529947,
+     89.84268385140257
+    ],
+    "flex_ci": [
+     63.457164518574686,
+     68.53677028051554
+    ],
+    "missing_strict": 27,
+    "disagree": 315,
+    "first_answer": 15,
+    "several_answers": 1156,
+    "contradict": 375,
+    "repeat": 129,
+    "cap": 1182,
+    "early_wrong_late_right": 11,
+    "early_right_late_wrong": 304,
+    "ntok_median": 512.0,
+    "ntok_mean": 477.1895375284306
+   },
+   "tail_web": {
+    "n": 1319,
+    "legacy": 89.23426838514025,
+    "strict": 88.70356330553449,
+    "flex": 89.08263836239576,
+    "strict_ci": [
+     86.88400303260046,
+     90.37149355572403
+    ],
+    "flex_ci": [
+     87.33699772554967,
+     90.67475360121304
+    ],
+    "missing_strict": 30,
+    "disagree": 7,
+    "first_answer": 0,
+    "several_answers": 190,
+    "contradict": 1,
+    "repeat": 1,
+    "cap": 28,
+    "early_wrong_late_right": 6,
+    "early_right_late_wrong": 1,
+    "ntok_median": 156.0,
+    "ntok_mean": 179.77937831690676
+   },
+   "chat": {
+    "n": 1319,
+    "legacy": 87.03563305534496,
+    "strict": 86.9598180439727,
+    "flex": 86.88400303260046,
+    "strict_ci": [
+     85.14025777103866,
+     88.77937831690674
+    ],
+    "flex_ci": [
+     85.06444275966642,
+     88.70356330553449
+    ],
+    "missing_strict": 21,
+    "disagree": 1,
+    "first_answer": 5,
+    "several_answers": 9,
+    "contradict": 1,
+    "repeat": 0,
+    "cap": 15,
+    "early_wrong_late_right": 0,
+    "early_right_late_wrong": 1,
+    "ntok_median": 119.0,
+    "ntok_mean": 132.86429112964368
+   },
+   "copy_chat": {
+    "n": 1319,
+    "legacy": 79.68157695223654,
+    "strict": 77.93783169067476,
+    "flex": 66.64139499620924,
+    "strict_ci": [
+     75.58756633813495,
+     80.28809704321456
+    ],
+    "flex_ci": [
+     64.0636846095527,
+     69.29492039423806
+    ],
+    "missing_strict": 61,
+    "disagree": 191,
+    "first_answer": 0,
+    "several_answers": 1096,
+    "contradict": 119,
+    "repeat": 170,
+    "cap": 815,
+    "early_wrong_late_right": 21,
+    "early_right_late_wrong": 170,
+    "ntok_median": 512.0,
+    "ntok_mean": 369.5473843821077
+   }
+  },
+  "9Bto27B": {
+   "native": {
+    "n": 1319,
+    "legacy": 96.0576194086429,
+    "strict": 95.67854435178165,
+    "flex": 96.0576194086429,
+    "strict_ci": [
+     94.46550416982562,
+     96.74184988627746
+    ],
+    "flex_ci": [
+     94.99620924943139,
+     97.04510993176648
+    ],
+    "missing_strict": 22,
+    "disagree": 7,
+    "first_answer": 0,
+    "several_answers": 14,
+    "contradict": 1,
+    "repeat": 1,
+    "cap": 23,
+    "early_wrong_late_right": 6,
+    "early_right_late_wrong": 1,
+    "ntok_median": 153.0,
+    "ntok_mean": 174.65200909780137
+   },
+   "web": {
+    "n": 1319,
+    "legacy": 80.74298711144806,
+    "strict": 65.80742987111448,
+    "flex": 66.03487490523123,
+    "strict_ci": [
+     63.30553449583017,
+     68.46095526914328
+    ],
+    "flex_ci": [
+     63.53297952994693,
+     68.53677028051554
+    ],
+    "missing_strict": 279,
+    "disagree": 243,
+    "first_answer": 160,
+    "several_answers": 744,
+    "contradict": 195,
+    "repeat": 178,
+    "cap": 940,
+    "early_wrong_late_right": 123,
+    "early_right_late_wrong": 120,
+    "ntok_median": 512.0,
+    "ntok_mean": 426.5413191811979
+   },
+   "tail_web": {
+    "n": 1319,
+    "legacy": 90.7505686125853,
+    "strict": 84.38210765731615,
+    "flex": 88.02122820318424,
+    "strict_ci": [
+     82.48673237300986,
+     86.3532979529947
+    ],
+    "flex_ci": [
+     86.2016679302502,
+     89.68915845337376
+    ],
+    "missing_strict": 148,
+    "disagree": 54,
+    "first_answer": 0,
+    "several_answers": 3,
+    "contradict": 0,
+    "repeat": 6,
+    "cap": 67,
+    "early_wrong_late_right": 51,
+    "early_right_late_wrong": 3,
+    "ntok_median": 193.0,
+    "ntok_mean": 225.41015921152388
+   },
+   "chat": {
+    "n": 1319,
+    "legacy": 86.2016679302502,
+    "strict": 84.68536770280515,
+    "flex": 85.59514783927217,
+    "strict_ci": [
+     82.71417740712661,
+     86.65655799848369
+    ],
+    "flex_ci": [
+     83.62395754359363,
+     87.49052312357847
+    ],
+    "missing_strict": 95,
+    "disagree": 14,
+    "first_answer": 6,
+    "several_answers": 14,
+    "contradict": 1,
+    "repeat": 20,
+    "cap": 70,
+    "early_wrong_late_right": 13,
+    "early_right_late_wrong": 1,
+    "ntok_median": 125.0,
+    "ntok_mean": 162.21683093252463
+   },
+   "copy_chat": {
+    "n": 1319,
+    "legacy": 9.704321455648218,
+    "strict": 8.41546626231994,
+    "flex": 10.159211523881728,
+    "strict_ci": [
+     6.899166034874906,
+     9.931766489764973
+    ],
+    "flex_ci": [
+     8.491281273692191,
+     11.902956785443518
+    ],
+    "missing_strict": 520,
+    "disagree": 25,
+    "first_answer": 247,
+    "several_answers": 252,
+    "contradict": 25,
+    "repeat": 412,
+    "cap": 618,
+    "early_wrong_late_right": 24,
+    "early_right_late_wrong": 1,
+    "ntok_median": 194.0,
+    "ntok_mean": 273.89689158453376
+   }
+  },
+  "27Bto9B": {
+   "native": {
+    "n": 1319,
+    "legacy": 93.32827899924186,
+    "strict": 93.10083396512509,
+    "flex": 93.02501895375285,
+    "strict_ci": [
+     91.73616376042456,
+     94.46550416982562
+    ],
+    "flex_ci": [
+     91.66034874905232,
+     94.38968915845336
+    ],
+    "missing_strict": 24,
+    "disagree": 5,
+    "first_answer": 0,
+    "several_answers": 15,
+    "contradict": 0,
+    "repeat": 0,
+    "cap": 28,
+    "early_wrong_late_right": 2,
+    "early_right_late_wrong": 3,
+    "ntok_median": 138.0,
+    "ntok_mean": 162.18498862774828
+   },
+   "web": {
+    "n": 1319,
+    "legacy": 20.621683093252464,
+    "strict": 20.0909780136467,
+    "flex": 47.536012130401815,
+    "strict_ci": [
+     17.890447308567097,
+     22.365428354814256
+    ],
+    "flex_ci": [
+     44.88248673237301,
+     50.11372251705838
+    ],
+    "missing_strict": 10,
+    "disagree": 410,
+    "first_answer": 1150,
+    "several_answers": 754,
+    "contradict": 473,
+    "repeat": 57,
+    "cap": 1100,
+    "early_wrong_late_right": 386,
+    "early_right_late_wrong": 24,
+    "ntok_median": 512.0,
+    "ntok_mean": 466.5890826383624
+   },
+   "tail_web": {
+    "n": 1319,
+    "legacy": 90.21986353297953,
+    "strict": 89.68915845337376,
+    "flex": 89.99241849886278,
+    "strict_ci": [
+     88.02122820318424,
+     91.20545868081881
+    ],
+    "flex_ci": [
+     88.40030326004549,
+     91.50871872630782
+    ],
+    "missing_strict": 50,
+    "disagree": 6,
+    "first_answer": 0,
+    "several_answers": 6,
+    "contradict": 1,
+    "repeat": 0,
+    "cap": 47,
+    "early_wrong_late_right": 5,
+    "early_right_late_wrong": 1,
+    "ntok_median": 217.0,
+    "ntok_mean": 232.53752843062927
+   },
+   "chat": {
+    "n": 1319,
+    "legacy": 89.84078847611828,
+    "strict": 89.31008339651251,
+    "flex": 89.61334344200151,
+    "strict_ci": [
+     87.56633813495071,
+     90.97801364670205
+    ],
+    "flex_ci": [
+     87.94541319181198,
+     91.20545868081881
+    ],
+    "missing_strict": 28,
+    "disagree": 6,
+    "first_answer": 2,
+    "several_answers": 3,
+    "contradict": 1,
+    "repeat": 0,
+    "cap": 30,
+    "early_wrong_late_right": 5,
+    "early_right_late_wrong": 1,
+    "ntok_median": 175.0,
+    "ntok_mean": 192.25094768764217
+   },
+   "copy_chat": {
+    "n": 1319,
+    "legacy": 16.148597422289612,
+    "strict": 14.783927217589083,
+    "flex": 15.769522365428355,
+    "strict_ci": [
+     12.964366944655042,
+     16.755117513267628
+    ],
+    "flex_ci": [
+     13.874147081122063,
+     17.81652767247915
+    ],
+    "missing_strict": 1038,
+    "disagree": 17,
+    "first_answer": 0,
+    "several_answers": 36,
+    "contradict": 8,
+    "repeat": 259,
+    "cap": 912,
+    "early_wrong_late_right": 15,
+    "early_right_late_wrong": 2,
+    "ntok_median": 512.0,
+    "ntok_mean": 385.7210007581501
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+diff --git a/scripts/synthetic.yaml b/scripts/synthetic.yaml
+index 29cfa5f..f68050a 100644
+--- a/scripts/synthetic.yaml
++++ b/scripts/synthetic.yaml
+@@ -119,4 +119,10 @@ qa_1:
+ qa_2:
+   task: qa
+   args:
+-    dataset: hotpotqa
+\ No newline at end of file
++    dataset: hotpotqa
++vt_hard:
++  task: variable_tracking
++  args:
++    type_haystack: noise
++    num_chains: 3
++    num_hops: 4

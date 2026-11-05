@@ -1,0 +1,13 @@
+# Versions used for the paper. Install the torch build that matches your CUDA driver.
+torch==2.13.0
+transformers==5.17.0
+flash-linear-attention==0.6.0
+causal-conv1d==1.7.0
+datasets==5.1.0
+pyarrow==26.0.0
+numpy
+scipy==1.18.1
+lm_eval==0.4.13
+matplotlib==3.11.2
+# Only for the native lm-eval check of the source-influence study:
+# vllm==0.31.0

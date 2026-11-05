@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+models/
+cache/
+manifests/
+results/raw/
+results/tables/
+results/figures/
+env.sh

@@ -1,0 +1,14 @@
+# gsm8k_cot with the study's decoding settings: <think> banned (Qwen3.5-27B otherwise opens a thinking block and
+# runs out of tokens before "The answer is"), up to 1024 new tokens. Prompt, few-shot and scoring unchanged.
+# run_lmeval.sh fills in the lm_eval install path.
+include: __LM_EVAL_TASKS__/gsm8k/gsm8k-cot.yaml
+task: gsm8k_cot_nothink
+generation_kwargs:
+  do_sample: false
+  until:
+  - 'Q:'
+  - </s>
+  - <|im_end|>
+  max_gen_toks: 1024
+  bad_words:
+  - <think>
