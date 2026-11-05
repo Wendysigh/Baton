@@ -2,6 +2,8 @@
 
 Baton lets one hybrid language model continue from another model's cache, without prefilling the shared prefix again. It translates the complete cache (attention keys and values, GDN recurrent states and convolution buffers), including between models with different depths and head counts. The maps are fitted on unlabeled text with both models frozen and no gradient descent.
 
+![Baton translates attention keys and values, recurrent states and convolution buffers for target continuation.](docs/overview.png)
+
 To rerun the experiments, see [REPRODUCE.md](REPRODUCE.md).
 
 ## Key findings
@@ -26,4 +28,4 @@ Across four directions among Qwen3.5-4B, 9B and 27B:
 | `scripts/` | The full pipeline, in order |
 | `results/summary/` | Aggregated numbers behind the paper |
 
-No fitted maps are included. Fitting needs both models on GPU, and a 9B/27B pair uses up to about 450 GiB of disk while fitting. See [REPRODUCE.md](REPRODUCE.md).
+No fitted maps are included. Fitting needs both models on GPU.
